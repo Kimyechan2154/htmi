@@ -1,49 +1,49 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>연습문제 3</title>
-  <style>
-    table {
-      border: 1px solid black;
-      border-collapse: collapse;
-      caption-side: bottom;
+<title>Online HTML Editor</title>
+<meta charset="UTF-8">
+<style>
+    table{
+        border: 1px solid black;
+        border-collapse :collapse;
+        caption-side:bottom;
     }
-   td, th {
-     padding: 10px;
-   }
-    .heading {
-      background-color: #eee;
+    
+    th,td{
+        width:100px;
+        height: 30px;
+        text-align: center;
+        border:1px solid black;
     }
-  </style>
+    th{
+        background-color: #eee;
+    }
+</style>
 </head>
 <body>
-  <table border="1">
-    <caption>2019 국민 독서실태</caption>
-    <thead class="heading">
-      <tr>
-        <th>구분</th>
-        <th>성인</th>
-        <th>독서자</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr >
-        <th class="heading">종이책</th>
-        <td>6.1권</td>
-        <td>11.8권</td>
-      </tr>
-      <tr>
-        <th class="heading">전자책</th>
-        <td>1.2권</td>
-        <td>7.1권</td>
-      </tr>
-      <tr>
-        <th class="heading">오디오북</th>
-        <td>0.2권</td>
-        <td>5.5권</td>
-      </tr>      
-    </tbody>
-  </table>
+<table border="1">
+    <tr>
+<th scope="col">구분</th>
+<th scope="col">성인</th>
+<th scope="col">독서자</th>
+</tr>
+<tr>
+  <th scope="col">종이책</th>
+    <td>6.1권</td>
+    <td>11.8권</td>
+</tr>
+<tr>
+    <th scope="col">전자책</th>
+    <td>1.2권</td>
+    <td>7.1권</td>
+</tr>
+<tr>
+    <th scope="col">오디오북</td>
+    <td>1.2권</td>
+    <td>5.5권</td>
+</tr>
+<caption>2019 국민 독서 실태</caption>
+</table>
 </body>
 </html>
