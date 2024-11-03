@@ -1,26 +1,52 @@
-https://hianna.tistory.com/499
-https://www.tutorialspoint.com/online_html_editor.php
+https://developyanggaeng.tistory.com/207
 <!DOCTYPE html>
 <html>
 <head>
-<title>Dog</title>
-<meta charset="UTF-8">
+<title>Online HTML Editor</title>
 <style>
-    
-    #dog{
-        border:1px solid black;
+{
+h1{ 
+    font-size:x-large;
+    margin:40px;
+}
+h2{
+    font-size:medium;
+    font-weight: 500;
+    border-bottom: 1px solid;
+    margin:40px;
+}
+    ul{
+        list-style-type:none;
+    }
+    .resume{
+     font-weight:bold;
     }
 </style>
 </head>
 <body>
-<h1>강아지 용품 준비하기</h1>
-<div id = "dog"><h2>강아지 집</h2>
-<P>강아지가 편히 쉴 수 있는 포근한 집이 필요합니다. 강아지의 집은 강아지가 다 큰 후에도 계속 쓸 수 있는 집으로 구입하세요.</P></div>
-<div id = "dog"><h2>강아지 먹이</h2>
-<P>강아지가 편히 쉴 수 있는 포근한 집이 필요합니다. 강아지의 집은 강아지가 다 큰 후에도 계속 쓸 수 있는 집으로 구입하세요.</P></div>
-<div id = "dog"><h2>밥그릇, 물병</h2>
-<P>강아지가 편히 쉴 수 있는 포근한 집이 필요합니다. 강아지의 집은 강아지가 다 큰 후에도 계속 쓸 수 있는 집으로 구입하세요.</P></div>
-<div id = "dog"><h2>이름표, 목줄</h2>
-<P>강아지가 편히 쉴 수 있는 포근한 집이 필요합니다. 강아지의 집은 강아지가 다 큰 후에도 계속 쓸 수 있는 집으로 구입하세요.</P></div>
+<h1>프론트앤드 개발자 지원서</h1>
+<h2>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</h2>
+<ul>
+    <p><li class="resume">개인정보</li><br>
+    <ul>
+        <form>
+    <li>이름 <input type='text'/></li>
+    <li>연락처 <input type='text'/></li>
+    </form>
+    </ul></p>
+    <p><li class="resume">지원 분야</li><br>
+    <ul>
+        <form><li><input type='radio' name='지원 분야' value= 'web'/> 웹퍼블리싱</li>
+        <li><input type='radio' name='지원 분야' value= 'web2'/> 웹 프론트앤드</li>
+        <li><input type='radio' name='지원 분야' value= 'app'/> 모바일 앱</li></form>
+    </p></ul>
+    <p><li class="resume">지원동기</li><br>
+    <textarea name="content" cols="70" rows="5">
+        
+    </textarea>
+    </p>
+</ul>
+
+
 </body>
 </html>
