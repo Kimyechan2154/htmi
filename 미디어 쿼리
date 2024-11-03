@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>미디어 쿼리</title>
+<style>
+div{
+border:5px solid green;
+    font-sixe:60px;
+}
+@media(max-width:800px){
+div{
+    display:none;
+}
+}
+</style>
+</head>
+    <body>
+    <div>
+    responsive
+    </div>
+    </body>
+</html>
