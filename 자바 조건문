@@ -11,7 +11,7 @@
             color:;
             text-decoration: none;
         }
-       
+      
         h1{
             font-size:45px;
             text-align:center;
@@ -21,7 +21,8 @@
         }
         ol{
             border-right:1px solid gray;
-           width:70px;
+         
+          width:70px;
             margin: 0;
             padding:20px;
         }
@@ -66,7 +67,7 @@
     document.querySelector('body').style.color = 'black';
       document.querySelector('#night_day').value = 'night';
     }
-    ">
+    "> 
 <div id="grid">
 <ol>
     <li><a href = "1.html">JAN</a></li>
@@ -90,6 +91,19 @@
         예측할 수 있는 결과이다. <br>그런 것에 대하여
         할말이 많을땐 보고싶은 다른 여러가지를
         보여주어 행동 할수 있다.</pstyle>
+        <input type="button" value="night" onclick=
+    "var target = document.querySelector('body');
+    if(this.value === 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'day';
+    }
+    else{
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+      this.value = 'night';
+    }
+    ">
     </div> </div>
     </body>
     </html>
