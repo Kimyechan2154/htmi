@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+   
+<title>Online HTML Editor</title>
+</head>
+<body>
+<h1>Array</h1>
+<h2>Syntax</h2>
+<script>
+    var coworkers = ["egoing", "leexche"];
+</script>
+<h2>get</h2>
+<script>
+    document.write(coworkers[0]);
+    document.write(coworkers[1]);
+    coworkers.length;
+</script>
+<h2>add</h2>
+<script>
+    coworkers.push('duru');
+    coworkers.push('taeho');
+</script>
+<h2>count</h2>
+<script>
+    document.write(coworkers.length);
+</script>
+</body>
+</html>
+
+https://developyanggaeng.tistory.com/207
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online HTML Editor</title>
+<style>
+{
+h1{ 
+    font-size:x-large;
+    margin:40px;
+}
+h2{
+    font-size:medium;
+    font-weight: 500;
+    border-bottom: 1px solid;
+    margin:40px;
+}
+    ul{
+        list-style-type:none;
+    }
+    .resume{
+     font-weight:bold;
+    }
+</style>
+</head>
+<body>
+<h1>프론트앤드 개발자 지원서</h1>
+<h2>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</h2>
+<ul>
+    <p><li class="resume">개인정보</li><br>
+    <ul>
+        <form>
+    <li>이름 <input type='text'/></li>
+    <li>연락처 <input type='text'/></li>
+    </form>
+    </ul></p>
+    <p><li class="resume">지원 분야</li><br>
+    <ul>
+        <form><li><input type='radio' name='지원 분야' value= 'web'/> 웹퍼블리싱</li>
+        <li><input type='radio' name='지원 분야' value= 'web2'/> 웹 프론트앤드</li>
+        <li><input type='radio' name='지원 분야' value= 'app'/> 모바일 앱</li></form>
+    </p></ul>
+    <p><li class="resume">지원동기</li><br>
+    <textarea name="content" cols="70" rows="5">
+        
+    </textarea>
+    </p>
+</ul>
+
+
+</body>
+</html>
