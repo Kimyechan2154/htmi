@@ -3,6 +3,37 @@
 <head>
     <title>chani's daily</title>
     <meta charset="utf-8">
+    <script>
+    function nightDayHandler(self){
+    var target = document.querySelector('body');
+    if(self.value === 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    self.value = 'day';
+    
+    var alist = document.querySelectorAll('a');
+var i = 0;
+while(i < alist.length){
+console.log(alist[i]);
+alist[i].style.color = 'powderblue';
+i = i + 1;
+}
+    }
+    else{
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+      self.value = 'night';
+      
+      var alist = document.querySelectorAll('a');
+var i = 0;
+while(i < alist.length){
+console.log(alist[i]);
+alist[i].style.color = 'blue';
+i = i + 1;
+}
+    }
+}
+    </script>
     <style>
     body{
         margin:0;
@@ -35,7 +66,7 @@
       padding-left:33px;
     }
     #article{
-      padding-left:25px;}
+       padding-left:25px;}
       
     @media(max-width:800px){
         ol{
@@ -54,20 +85,9 @@
 <body>
 
     <h1><a href = "index.html">WEB</a></h1>
-    <input id="night_day" type="button" value="night" onclick=
-    " 
-    if(document.querySelector('#night_day').value === 'night'){
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white';
-    document.querySelector('#night_day').value = 'day';
-    }
-    else{
-    document.querySelector
-    ('body').style.backgroundColor = 'white';
-    document.querySelector('body').style.color = 'black';
-      document.querySelector('#night_day').value = 'night';
-    }
-    "> 
+    <input type="button" value="night" onclick=
+    "nightDayHandler(this);
+    ">
 <div id="grid">
 <ol>
     <li><a href = "1.html">JAN</a></li>
@@ -78,7 +98,7 @@
 </ol>
 <div id="article">
         <h2><a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target ="_blank" title="html5 speicification">CHANI'S MONTHLY SETTLEMENT</a></h2>
-        <br><strong>10/03</strong>친구들이 <u>면회</u>를 왔다.
+        <br><strong>10/03</strong>친구들이 <u>면회</u>를 왔다. 
         <br><strong>10/05</strong>워드프로세서 <u>필기 시험</u>을 봤다.
         <br><strong>10/26</strong><u>외박</u>을 나갔다 왔다.
         <img src="hani.jpg" width="100">
@@ -89,34 +109,10 @@
         이런말은 내가 원래 하려던 말은
         아니다. <br>랜덤으로 뽑게하여 수많은 다른 여러가지의 방법이 나오는것을 위하여 대하는 행동이 달라진다는 것은
         예측할 수 있는 결과이다. <br>그런 것에 대하여
-        할말이 많을땐 보고싶은 다른 여러가지를
+        할말이 많을땐 보고싶은 다른 여러가지를 
         보여주어 행동 할수 있다.</pstyle>
         <input type="button" value="night" onclick=
-    "var target = document.querySelector('body');
-    if(this.value === 'night'){
-    target.style.backgroundColor = 'black';
-    target.style.color = 'white';
-    this.value = 'day';
-    
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-    alist[i].style.color = 'powderblue';
-    i = i + 1;
-    }
-    }
-    else{
-    target.style.backgroundColor = 'white';
-    target.style.color = 'black';
-      this.value = 'night';
-      
-      var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-    alist[i].style.color = 'blue';
-    i = i + 1;
-    }
-    }
+    "nightDayHandler(this);
     ">
     </div> </div>
     </body>
