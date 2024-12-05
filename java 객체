@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<title>Online HTML Editor</title>
+</head>
+<body>
+<h1>Object</h1>
+<h2>Create</h2>
+<script>
+    var cowerkers = {
+      "pro":"yechan",
+      "design":"juha"
+    };
+    document.write("pro : "+cowerkers.pro+"<br>");
+    document.write("design : "+cowerkers.design+"<br>");
+    cowerkers.book = "duru";
+    document.write("book : "+cowerkers.book+"<br>");
+    cowerkers["data science"] = "taeho";    document.write("data science : "+cowerkers["data science"]);
+
+</script>
+</body>
+</html>
