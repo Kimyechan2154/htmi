@@ -1,28 +1,43 @@
 <!doctype html>
+<!--
+document, dom 태그 삭제 자식태그 추가 
+window 현재 사용중 웹페이지 정보
+ajax 리로드 없이 정보 변경
+cookie 리로드에도 현재 상태 유지
+offline web application 인터넷 업쇼이 가능한 웹페이지
+webRTC 화상 통신
+speech 음성인식
+webGL 게임
+webVR 가상현실
+-->
 <html>
 <head>
     <title>chani's daily</title>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>  
     var Links = {
         setColor:function (color){
         var alist = document.querySelectorAll('a');
-var i = 0;
-while(i < alist.length){
-console.log(alist[i]);
-alist[i].style.color = color;
-i = i + 1;
-}
+// var i = 0;
+// while(i < alist.length){
+// console.log(alist[i]);
+// alist[i].style.color = color;
+// i = i + 1;
+// }
+$('a').css('color', color);
     }
     }
     
     var Body = {
         setColor:function (color){
-                    document.querySelector('body').style.color = color;
+                    // document.querySelector('body').style.color = color;
+    $('body').css('color', color);
         },
         setBackgroundColor:function (color){
-      document.querySelector('body').style.backgroundColor = color;
-    }
+    //   document.querySelector('body').style.backgroundColor = color;
+    // }
+    $('body').css('color', color);
     }
     function nightDayHandler(self){
     var target = document.querySelector('body');
