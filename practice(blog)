@@ -3,9 +3,19 @@
     <head>
         <meta charset="UTF-8" />
         <title>Title</title>
-        <link href="practice2.css" rel="stylesheet">
+        <link href="practice1.css" rel="stylesheet">
     </head>
     <body>
+        
+        <nav>
+        <ul class="navbar">
+            <li><a href="#">영화</a></li>
+            <li><a href="#">맛집</a></li>
+            <li><a href="#">IT</a></li>
+            <li><a href="#">컴퓨터</a></li> 
+        </ul>
+        </nav>
+        
         <div class="container2">
             <div class="left">
                 <div class="up">
@@ -13,7 +23,7 @@
                     class="imagine"> <!-- 이미지 경로와 설명 추가 -->
                     <h3 class="name">아우리</h3>
                     <p>1시간 전</p>
-                </div>
+                </div><div style="clear: both"></div>
                 <div class="down"><h4 class="main">4k빔프로젝터 가성비 최강으로 선택했어요.</h4>
                 <p class="bord">가성비 어쩌고 저쩌고 여러가지 설명이 있고 그에 대한 얘기를 나누다.<br>
                     보면 어떤 말이든 할 수 있다는 사실이 신기할 뿐이다.....</p></div>
@@ -87,7 +97,18 @@ p {
 .bord {
     margin-top: 5px;
 }
+.navbar>li{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
 
 
-
-
+.navbar a{
+    font-size: 16px;
+    text-decoration: none;
+    color: aqua;
+}
