@@ -12,90 +12,25 @@
         <button class="show-button" type="button">
         <strong><a href="#" class="pushpush" >push to show!</a></strong>
         </button>
+        <div class="how-design"><h4>
+            How to show our cloud</h4>
+        <p>Hi everyone I'm yechan welcome to our page</p></div>
     </div>
-    
+    <form>
+        <input type="text" value="Filled" class="text-input"
+               >
+        <input type="password" placeholder="background">
+        <input type="email">
+        <input type="checkbox">
+        <select>
+        <option>asdfadf</option>
+        <option>dddd</option>
+        <option>dddaad</option>
+        </select>
+        <button type="submit"><p>전송</p></button>
+        </form>
     </body>
 </html>
-
-.container2 {
-    width: 800px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.left {
-    width: 80%;
-    height: 100px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.right {
-    width: 20%;
-    height: 100px;
-    display: inline-block;
-}
-
-.up {
-    width: 100%;
-    height: 30%;
-    display: inline-block;
-    vertical-align: top;
-    margin: 0;
-    padding: 0
-}
-
-.down {
-        width: 100%;
-    height: 70%;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.picture {
-    display: inline-block;
-}
-
-.name {
-        vertical-align: top;
-        margin: 0;
-    font-size: smaller;
-}
-
-p {
-    margin: 0;
-    font-size: 10px;
-    color: gray
-}
-
-.imagine {
-    display: inline-block;
-    float: left;
-}
-
-.main {
-    margin: 0;
-}
-
-.bord {
-    margin-top: 5px;
-}
-.navbar>li{
-    display: inline-block;
-    width: 60px;
-    text-align: center;
-    background: #eee;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-
-.navbar a{
-    font-size: 16px;
-    text-decoration: none;
-    color: aqua;
-}
 
 .main-background {
     width: 100%;
@@ -138,4 +73,42 @@ p {
     font-size: large;
     background-color: aqua;
     text-align: center
+}
+.how-design {
+    height: 100px;
+    width: 300px;
+        background-color: aquamarine;
+     position: absolute;
+    left: 0;
+    right: 0;
+    top: 400px;
+    margin: auto;
+    text-align: center;
+    color: black;
+}
+
+input[type=text] {
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid red;
+        border-radius: 5px;
+}
+
+.main-page {
+    width: 100%;
+    height: 80%;
+    background-color: aqua;
+    position: absolute;
+    top: 10%;
+    padding: 20px;
+}
+
+
+.main-cont {
+    width: 300px;
+    height: 420px;
+    background-color: white;
+    margin: auto;
+    margin-top: 30%;
+    padding: 30px;
 }
