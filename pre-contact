@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <link href="practice1.css" rel="stylesheet">
+    </head>
+    <body class="main-back">
+    <div class="main-cont"><h2>
+    contact us</h2>
+    <h5>Your Email</h5>
+    <input type="email" placeholder="email@example.com"
+           class="pra-email">
+        <div class="pre-name">
+        <h5>First name</h5><input type="text"
+        class="pre-namebox">
+        </div>
+        <div class="pre-name">
+        <h5>last name</h5><input type="text" class="pre-namebox"></div>
+        <div class="pre-message"><h5>Message</h5>
+        <input type="text" class="pre-messagebox"></div>
+        <div class="pre-last"><input type="checkbox" class="pre-subscribe">
+        <h6 class="pre-sub-text">Subscrive</h6><button type="submit" class="pre-send">
+            <p class="pre-sendtext">SEND</p></button></div>
+    </div>
+    </body>
+</html>
+
+
+.main-back {
+    background-color: grey;
+    position: relative;
+}
+
+div h5 {
+    margin-bottom : 5px;
+}
+
+.pra-email {
+    padding: 5px 15px;
+    width: 80%;
+}
+
+.pre-name {
+    width: 50%;
+    height: 100px;
+    float: left;
+}
+
+.pre-namebox {
+    padding: 5px 15px;
+    width:70%;
+    height: 10px;
+    font-size: 15px;
+}
+
+
+
+.pre-clear {
+    clear: left;
+}
+
+.pre-message {
+    clear: both;
+    height: 170px;
+}
+
+.pre-messagebox {
+    padding: 5px 15px;
+    width: 86%;
+    height: 100px;
+        
+}
+
+.pre-subscribe {
+    float: left;
+}
+
+
+.pre-send {
+    float: right;
+    width: 100px;
+    height: 30px;
+    background-color: orange;
+    border: none;
+        border-radius: 5px;
+}
+
+.pre-last {
+    height: 100px;
+    width: 285px;
+}
+
+
+
+.pre-sendtext {
+    color: white;
+    font-size: large;
+}
+
+.pre-sub-text {
+    float: left;
+    margin: 0;
+}
