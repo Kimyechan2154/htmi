@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body class="pre-shop">
+    <div class="pre-shop-page">
+    <h2 class="pre-title">Your shopping cart</h2>
+        <div>
+        <table>
+        <thead>
+        <tr>
+        <td></td>
+        <td><p class="pre-left-align">ITEM</p></td>
+        <td><p>AMOUNT</p></td>
+        <td><p>PRICE</p></td>
+        <td><p>TOTAL</p></td>    
+        </tr>    
+        </thead>
+        <tbody>
+           <tr>
+        <td><img href="#">사진</td>
+        <td><p class="pre-SONY pre-left-align">SONY</p><p class="pre-explain pre-left-align">FE 70-200mm F2.8 GM OSS</p></td>
+        <td><p>1</p></td>
+        <td><p>1979.00</p></td>
+        <td><p>1979.00</p></td>    
+        </tr>
+        <tr>    
+        <td><img href="#">사진</td>
+            <td><p class="pre-SONY pre-left-align">SONY</p><p class="pre-explain pre-left-align">Sonnar T*E24mm F1.8 ZA</p></td>
+        <td><p>1</p></td>
+        <td><p>989.00</p></td>
+        <td><p>989.00</p></td>    
+        </tr>
+            <tr>
+        <td colspan="5"><p>2968.00</p></td>  
+        </tr>
+        </tbody>    
+        </table>
+        </div>
+        <div class="pre-buybutton">
+        <a href="#" class="pre-cart">Edit your sopping cart</a>
+        <input type="button" name="Choose pay ment method" value="Choose pay ment method" class="pre-paybutton" onclick="#" >
+        <input class="input-test">
+            <a href="index.html" class="custom-link">링크</a>
+        </div>
+    </div>
+   
+    </body>
+</html>
+
+
+table {
+    border-collapse: collapse; /* 셀 간 간격을 둬야 border-radius가 적용됩니다 */
+    border-radius: 10px; /* 테이블 전체에 둥근 모서리 적용 */
+    overflow: hidden; /* 테이블 내용이 테두리를 벗어나지 않도록 함 */
+    border: 1px solid black; /* 테이블 외부 테두리 */
+    width: 100%;
+    ailgn
+}
+.pre-shop td{
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid cadetblue;
+    border-bottom: 1px solid cadetblue;
+    background-color: white;
+    position: relative; /* 셀 내에서 위치를 조정할 수 있게 설정 */
+    overflow: visible; /* 내용이 셀 밖으로 넘치도록 설정 */
+    white-space: nowrap; /* 텍스트가 한 줄로 표시되도록 설정 */
+
+}
+
+p {
+    margin: 1px;
+    padding: 1px;
+    color: cadetblue;
+    font-size: small;
+    text-align: right;
+    margin: 10px;
+}
+
+.pre-shop {
+    background-color: cadetblue;
+}
+
+.pre-shop-page {
+    height: 300px;
+    width: 600PX;
+    /*background-color: white;*/
+    margin: auto;
+}
+
+.pre-title {
+    color: blue;
+    margin-top: 50px;
+}
+
+.pre-SONY {
+    color: black;
+    font-size: medium;
+    margin-top: 10px;
+}
+
+.pre-explain {
+    margin-bottom: 15px;
+}
+
+.pre-left-align {
+    text-align: left;
+}
+
+.pre-buybutton {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+.pre-cart {
+    float: left;
+    color: blue;
+    margin-top: 20px
+}
+
+.pre-paybutton {
+    background-color: darkblue;
+    color: white;
+    float: right;
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+.pre-paybutton:hover {
+    background-color: chocolate;
+}
+.pre-paybutton:focus {
+    background-color: aqua;
+}
+.pre-paybutton:active {
+    background-color: brown;
+}
+
+.input-test {
+    font-size: 20px;
+}
+.input-test:focus {
+    border: 5px solid red;
+}
+
+.custom-link {
+    text-decoration: none;   
+}
+.custom-link:link{
+    color: skyblue;
+}
+.custom-link:visited {
+    color: rebeccapurple;
+}
