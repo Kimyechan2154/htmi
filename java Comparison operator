@@ -1,28 +1,63 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-<title>Online HTML Editor</title>
-</head>
-<body>
-<h1>Comparison operator & Boolean</h1>
-<h2>===</h2>
-<script>
-    document.write(1===1);
-</script>
-<h3>1===1</h3>
-<script>
-    document.write(1===2);
-</script>
-<h3>1===2</h3>
-<h3>1&lt;2</h3>
-<script>
-    document.write(1<2);
-</script>
-<h3>1&lt;1</h3>
-<script>
-    document.write(1<1);
-</script>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Phoenix editor</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
-</body>
+    <body>
+    <nav class="main-stream">
+    <div class="main-paze main-table">
+        <div class="main-second"><h3>Try to buy</h3></div>
+        <div class="main-second"><p>long time no see</p></div>
+    </div>
+    <div class="main-paze main-table">
+        <div class="main-second"><h3>Try to buy</h3></div>
+        <div class="main-second"><p>long time no see</p></div>
+    </div>
+    <div class="main-paze main-table2">
+        <div class="main-second"><h3>Try to buy</h3></div>
+        <div class="main-second"><p>long time no see</p></div>
+    </div>
+    <div class="main-paze main-table2">
+        <div class="main-second"><h3>Try to buy</h3></div>
+        <div class="main-second"><p>long time no see</p></div>
+    </div>
+    </nav>
+    </body>
 </html>
+
+.main-paze {
+   }
+
+
+.main-stream {
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+@media screen and (min-width:1200px){
+    .main-paze{
+        float: left;
+        width: 25%;
+        height: 100px;
+        margin: 0 auto;
+        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .main-table{
+         float: left;
+         width: 50%;
+    }
+    .main-table2{
+         float: left;
+         width: 50%;
+    }
+}
