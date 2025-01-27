@@ -35,12 +35,12 @@
         <div class="shop-container">
             <div class="shop-item">
             <div style="position: relative">
-            <div class="overlay"><p class=>DEEP BLUE</p></div>
+            <div class="overlay"><p class="shop-it-explain">DEEP BLUE</p></div>
             <img src="images/cloud1.svg">
             </div></div>
             <div class="shop-item">
             <div style="position: relative">
-            <div class="overlay"></div>
+                <div class="overlay2"><p class="shop-it-explain">SKY BLUE</p></div>
             <img src="images/cloud2.svg">
                 </div></div>
             <div class="shop-item">
@@ -52,10 +52,6 @@
     </div>    
     </body>
 </html>
-
-.main-paze {
-   }
-
 
 .main-stream {
     width: 80%;
@@ -123,6 +119,33 @@ i {
     transition: all 1s;
     transition-timing-function: cubic-bezier(); 
 }
+
+
+.overlay2 {
+  position: absolute;
+  bottom: 00%;  /* 처음에는 화면 밖, 아래쪽에 배치 */
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(100%);  /* 처음에는 밑으로 밀려서 보이지 않게 설정 */
+  transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1); /* 부드러운 타이밍 함수 설정 */
+}
+
+.shop-item:hover .overlay2 {
+  opacity: 1;
+  transform: translateY(0); /* hover 시에는 위로 올라오고 보이게 설정 */
+}
 .overlay:hover {
     opacity: 1;
 }
+.shop-it-explain {
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    font-size: 3vw;
+}
+
+
+
