@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Phoenix editor</title>
+        <link rel="stylesheet" href="practice1.css" />
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body style="margin: 0; padding: 0;">
+    <div class="main-paze">
+        <div style="float: left;">
+        <div class="main-name"><h2>Landing Page for Apps</h2></div>
+        <div class="main-name main-explain"><p>explain 어쩌구 저쩌구 그게 뭐든 별로<br>안중요해 니가있다는 거자체가 불편해</p></div>
+        <div class="main-name main-explain"><input type="button" value="Show More" class="main-show-button">
+        </div>
+        </div>
+        <div class="main-smartphone">
+            <img src="images/vector-top-left.png" class="main-smart-img"> </div>
+    </div>
+    <div class="main-centeralign">
+    <div><p><strong>또 나만 잘못했구나 알겠어 잘가 빠이야</strong></p></div>    
+    <div><p>다 한때는 너와 사랑을 했잖아.</p></div>
+    <input type="button" value="Show Profile" class="main-show-button">
+    </div>
+    <div class="main-centeralign main-text-white" style="background-color: deepskyblue">
+    <div><p class="main-third-explain">또 나만 잘못했구나 알겠어 잘가 빠이야</p>  
+    <h4 class="main-third-explain2">다 한때는 너와 사랑을 했잖아.</h4></div>
+        <div><i class="fa-solid fa-mobile main-phone"></i></div>
+    </div>
+    </body>
+</html>
+
+.main-paze {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(skyblue, violet);
+}
+
+
+
+.main-name {
+    padding: 20px;
+    color: white;
+    padding-bottom: 0px;
+}
+.main-explain {
+    padding-top: 0;
+}
+
+.main-show-button {
+    background-color: dimgrey;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+}
+
+.main-smartphone {
+    padding: 120.5px 50px 0px 0px;
+    float: right;
+}
+
+.main-centeralign {
+    margin: 0 auto;
+    text-align: center;
+}
+.main-smart-img {
+    height: 275px;
+}
+
+
+@media screen and (max-width:450px) {
+    
+    .main-paze{
+        margin: 0 auto;
+    text-align: center;
+    }
+    .main-name{
+        width: 100%;
+    }
+    .main-smartphone{
+        float: left;
+        padding: 30px;
+        padding-left: 150px;
+    }
+    .main-smart-img {
+        height: 147px;
+    }
+}
+
+.main-text-white {
+    color: white;
+}
+
+.main-third-explain {
+    padding-top: 30px;
+    padding-bottom: 0;
+    font-size: 10px;
+    line-height: 1;
+}
+
+.main-third-explain2 {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+.fa-mobile {
+    
+}
+
+.main-phone {
+    font-size: 50px;
+}
