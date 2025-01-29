@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>Phoenix editor</title>
-        <link rel="stylesheet" href="practice1.css" />
+        <link rel="stylesheet" href="styles.css" />
         <script src="script.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,11 +28,49 @@
     <div class="main-centeralign main-text-white" style="background-color: deepskyblue">
     <div><p class="main-third-explain">또 나만 잘못했구나 알겠어 잘가 빠이야</p>  
     <h4 class="main-third-explain2">다 한때는 너와 사랑을 했잖아.</h4></div>
-        <div><i class="fa-solid fa-mobile main-phone"></i></div>
+   <div class="main-icon-align">
+    <div class="main-icon-box">
+        <div class="main-icon"><i class="fa-solid fa-mobile"></i></div>
+        <p class="icon-description">Responsive</p>
+    </div>
+    <div class="main-icon-box">
+        <div class="main-icon"><i class="fa-solid fa-flask"></i></div>
+        <p class="icon-description">Experiments</p>
+    </div>
+    <div class="main-icon-box">
+        <div class="main-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+        <p class="icon-description">Quickness</p>
+    </div>
+    <div class="main-icon-box">
+        <div class="main-icon"><i class="fa-solid fa-earth-americas"></i></div>
+        <p class="icon-description">Global Shipping</p>
+    </div>
+</div> </div>
+<div class="main-last">
+        <div>
+            <p>sdsdds</p>
+            <h3>asdgaddada</h3>
+
+            <div class="main-img-container">
+                <img src="images/cloud1.svg" class="main-img-align">
+                <p class="main-img-text">첫 번째 이미지</p>
+            </div>
+            <div class="main-img-container">
+                <img src="images/cloud2.svg" class="main-img-align">
+                <p class="main-img-text">두 번째 이미지</p>
+            </div>
+            <div class="main-img-container">
+                <img src="images/cloud3.svg" class="main-img-align">
+                <p class="main-img-text">세 번째 이미지</p>
+            </div>
+            <div class="main-img-container">
+                <img src="images/cloud4.svg" class="main-img-align">
+                <p class="main-img-text">네 번째 이미지</p>
+            </div>
+        </div>
     </div>
     </body>
 </html>
-
 .main-paze {
     width: 100%;
     height: 400px;
@@ -44,7 +82,7 @@
 .main-name {
     padding: 20px;
     color: white;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
 .main-explain {
     padding-top: 0;
@@ -58,7 +96,7 @@
 }
 
 .main-smartphone {
-    padding: 120.5px 50px 0px 0px;
+    padding: 120.5px 50px 0 0;
     float: right;
 }
 
@@ -111,6 +149,69 @@
     
 }
 
-.main-phone {
-    font-size: 50px;
+.main-icon-align {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px auto;
+}
+
+.main-icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-icon {
+    background-color: burlywood;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+.icon-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+}
+
+.main-last {
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+    height: 250px;
+    background-color: aqua;
+    text-align: center;
+}
+
+/* 이미지 컨테이너 스타일 */
+.main-img-container {
+    position: relative; /* 부모 요소 기준 */
+    float: left; /* 기존 레이아웃 유지 */
+    width: 50%; /* 4개 이미지 정렬 */
+    text-align: center;
+    height: 70px;
+}
+
+/* 이미지 크기 유지 */
+.main-img-align {
+    width: 100%;
+    height: auto;
+}
+
+/* 이미지 위에 텍스트 배치 */
+.main-img-text {
+    position: absolute;
+    top: 5px; /* 이미지 위에서 5px */
+    left: 5px; /* 이미지 왼쪽에서 5px */
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
 }
